@@ -1,0 +1,20 @@
+<GridLayout>:
+    cols: 1
+
+    BoxLayout:
+        Label:
+            text: 'Watermark App'
+
+    BoxLayout:
+        Label:
+            text: 'Type your watermark: '
+        TextInput:
+            id: my_text
+            multiline: False
+
+    BoxLayout:
+        Label:
+            text: 'Choose your image: '
+        Button:
+            text: 'Pick Image'
+            on_press: root.choose_file(my_text.text)
