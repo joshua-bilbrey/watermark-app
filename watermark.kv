@@ -1,9 +1,13 @@
 <GridLayout>:
     cols: 1
+    size_hint: [.9, .9]
+    pos_hint: { 'top' : .95, 'right': .95}
+    spacing: (0, 150)
 
     BoxLayout:
         Label:
             text: 'Watermark App'
+            font_size: '30sp'
 
     BoxLayout:
         Label:
@@ -11,6 +15,7 @@
         TextInput:
             id: my_text
             multiline: False
+            padding: 10
 
     BoxLayout:
         Label:
